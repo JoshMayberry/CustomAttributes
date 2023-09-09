@@ -1,0 +1,16 @@
+{
+    "name": "jmayberry.CustomAttributes",
+    "rootNamespace": "jmayberry.CustomAttributes",
+    "references": [
+        "GUID:9df8abd7b4051994e8bc119ae975eac0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
