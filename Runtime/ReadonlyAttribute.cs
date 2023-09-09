@@ -1,6 +1,5 @@
 using UnityEngine;
 
-/**
- * Created by ChatGPT.
- */
-public class ReadonlyAttribute : PropertyAttribute { }
+namespace jmayberry.CustomAttributes {
+    public class ReadonlyAttribute : PropertyAttribute { }
+}
