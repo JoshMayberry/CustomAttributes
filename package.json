@@ -5,8 +5,7 @@
 	"unity": "2021.1",
 	"description": "Some custom attributes I use for Unity projects.",
 	"keywords": [
-		"typewriter",
-		"dialogue-systems",
+		"custom-attributes",
 		"utility"
 	],
 	"dependencies": {

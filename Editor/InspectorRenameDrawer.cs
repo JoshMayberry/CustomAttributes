@@ -2,11 +2,11 @@ using UnityEditor;
 using UnityEngine;
 
 namespace jmayberry.CustomAttributes.Editor {
-	[CustomPropertyDrawer(typeof(InspectorNameAttribute))]
-	public class InspectorNameDrawer : PropertyDrawer {
+	[CustomPropertyDrawer(typeof(InspectorRenameAttribute))]
+	public class InspectorRenameDrawer : PropertyDrawer {
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
 			// Get the attribute data
-			InspectorNameAttribute renameAttribute = (InspectorNameAttribute)attribute;
+			InspectorRenameAttribute renameAttribute = (InspectorRenameAttribute)attribute;
 
 			// Change the label's text to the new name
 			label.text = renameAttribute.NewName;

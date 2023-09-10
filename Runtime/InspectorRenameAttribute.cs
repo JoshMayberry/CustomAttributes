@@ -2,10 +2,10 @@ using UnityEngine;
 
 namespace jmayberry.CustomAttributes {
 
-	public class InspectorNameAttribute : PropertyAttribute {
+	public class InspectorRenameAttribute : PropertyAttribute {
 		public string NewName { get; private set; }
 
-		public InspectorNameAttribute(string newName) {
+		public InspectorRenameAttribute(string newName) {
 			NewName = newName;
 		}
 	}
