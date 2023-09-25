@@ -110,24 +110,25 @@ namespace jmayberry.CustomAttributes.Editor {
 				return false;
 			}
 
-			if (property.propertyType == SerializedPropertyType.ObjectReference && property.objectReferenceValue == null) {
+			if ((property.propertyType == SerializedPropertyType.ObjectReference) && (property.objectReferenceValue == null)) {
 				return true;
 			}
-			if (property.propertyType == SerializedPropertyType.String && string.IsNullOrEmpty(property.stringValue)) {
+			if ((property.propertyType == SerializedPropertyType.String) && string.IsNullOrEmpty(property.stringValue)) {
 				return true;
 			}
-			if (property.propertyType == SerializedPropertyType.ArraySize && property.arraySize == 0) {
+			if ((property.propertyType == SerializedPropertyType.ArraySize) && (property.arraySize == 0)) {
 				return true;
 			}
-			if (property.propertyType == SerializedPropertyType.Float && property.floatValue == float.MinValue) {
+			if ((property.propertyType == SerializedPropertyType.Float) && (property.floatValue == float.MinValue)) {
 				return true;
 			}
-			if (property.propertyType == SerializedPropertyType.Integer && property.intValue == int.MinValue) {
+			if ((property.propertyType == SerializedPropertyType.Integer) && (property.intValue == int.MinValue)) {
 				return true;
 			}
 			if (property.isArray) {
 				for (int i = 0; i < property.arraySize; i++) {
-					if (property.GetArrayElementAtIndex(i).objectReferenceValue == null) {
+					SerializedProperty arrayElement = property.GetArrayElementAtIndex(i);
+					if ((arrayElement.propertyType == SerializedPropertyType.ObjectReference) && (arrayElement.objectReferenceValue == null)) {
 						return true;
 					}
 				}
